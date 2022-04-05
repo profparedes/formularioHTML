@@ -1,0 +1,117 @@
+<html>
+   <head>
+      <meta charset="urf-8" />
+      <title>Formulário</title>
+   </head>
+   <body>
+      <h1>Meu Formulário</h1>
+      <p>Formulário de teste</p>
+
+      <form action="" method="post" enctype="multipart/form-data">
+         <div>
+            <label for="">Nome</label>
+            <input
+               type="text"
+               name="nome"
+               required="required"
+               placeholder="Digite seu nome"
+               id=""
+            />
+         </div>
+
+         <div>
+            <label for="">Email</label>
+            <input
+               type="text"
+               name="email"
+               required="required"
+               placeholder="Digite seu email"
+               id=""
+            />
+         </div>
+
+         <div>
+            <label for="">Selecione sua cidade</label>
+            <select required="required" name="Cidade" id="">
+               <option selected="selected" value="">Selecione</option>
+               <option value="NF">Nova Friburgo</option>
+               <option value="BJ">Bom Jardin</option>
+               <option value="CM">Cachoeiras de Macacú</option>
+               <option value="DB">Duas Barras</option>
+            </select>
+         </div>
+
+         <div>
+            <label for="">Sua Foto</label>
+            <input required="required" type="file" name="foto" />
+         </div>
+
+         <div>
+            <p>Selecione seu sexo</p>
+            <label for="sexo1"
+               ><input
+                  type="radio"
+                  id="sexo1"
+                  name="sexo"
+                  value="m"
+               />Masculino</label
+            >
+            <label for="sexo2"
+               ><input
+                  type="radio"
+                  id="sexo2"
+                  name="sexo"
+                  value="f"
+               />Feminino</label
+            >
+            <label for="sexo3"
+               ><input
+                  type="radio"
+                  id="sexo3"
+                  name="sexo"
+                  value="n"
+               />Neutro</label
+            >
+         </div>
+
+         <div>
+            <p for="">Biografia</p>
+            <textarea
+               name="biografia"
+               placeholder="Digite sua biografia"
+               required="required"
+               id=""
+               cols="50"
+               rows="10"
+            ></textarea>
+         </div>
+
+         <div>
+            <label for="">Senha</label>
+            <input
+               type="password"
+               name="senha"
+               required="required"
+               placeholder="Digite sua senha"
+               id=""
+            />
+         </div>
+
+         <div>
+            <label for="confirmacao">
+               <input
+                  name="confirmacao"
+                  type="checkbox"
+                  name="confirmacao"
+                  id="confirmacao"
+               />
+               Receber confirmação de formulário
+            </label>
+         </div>
+
+         <div>
+            <button name="enviar" value="1" type="submit">Enviar</button>
+         </div>
+      </form>
+   </body>
+</html>
